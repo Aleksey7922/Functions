@@ -20,13 +20,8 @@ void main()
 	cout << a << "-" << b << "=" << Sub(a, b) << endl;
 	cout << a << "*" << b << "=" << Mul(a, b) << endl;
 	cout << a << "/" << b << "=" << Div(a, b) << endl;
-	int result = 1;
-	for (int i = 0; i < b; i++)
-	{
-		result *= a;
-
-	}
-	cout << a << "^" << b << "=" << result;
+	
+	cout << a << "^" << b << "=" << Pow(a,b);
 }
 int Add(int a, int b)//..реализация функции , определени функции Function derinition
 {
@@ -52,11 +47,13 @@ int Div(int a, int b)
 int Pow(int a, int b)
 {
    // Возведение в степень 
-	return a ^ b;
+	int result = 1;
+	for (int i = 0; i < b; i++)
+	{
+		result *= a;
+	}
+	return result;
 }
-
-
-
 
 
 
