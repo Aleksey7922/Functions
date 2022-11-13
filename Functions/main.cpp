@@ -19,8 +19,7 @@ void main()
 	cout << a << "+" << b << "=" << c << endl;
 	cout << a << "-" << b << "=" << Sub(a, b) << endl;
 	cout << a << "*" << b << "=" << Mul(a, b) << endl;
-	cout << a << "/" << b << "=" << Div(a, b) << endl;
-	
+	cout << a << "/" << b << "=" << Div(a, b) << endl;	
 	cout << a << "^" << b << "=" << Pow(a,b);
 }
 int Add(int a, int b)//..реализация функции , определени функции Function derinition
